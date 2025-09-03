@@ -3,93 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🧠 OCR A-Level Computer Science MCQ Bank (H446)</title>
+  <title>OCR H446 A-Level Computer Science MCQ Mastery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>OCR H446 A-Level Computer Science MCQ Bank</h1>
-    <p>Component 01: Computer Systems & Component 02: Algorithms and Programming</p>
-    <button id="theme-toggle">Toggle Dark Mode</button>
-    <input type="text" id="search-bar" placeholder="Search topics (e.g., 1.1.1 or processor)">
+  <header class="bg-primary text-white text-center py-4">
+    <h1 class="display-4">OCR H446 A-Level Computer Science MCQ Mastery</h1>
+    <p class="lead">Master Computer Science with interactive quizzes, progress tracking, and detailed explanations. No login required.</p>
+    <button id="theme-toggle" class="btn btn-light">Toggle Dark Mode</button>
+    <input type="text" id="search-bar" class="form-control w-50 mx-auto mt-3" placeholder="Search topics...">
   </header>
 
-  <main>
-    <section id="component-01">
-      <h2>Component 01 — Computer Systems</h2>
-      <ul>
-        <li>1.1 The characteristics of contemporary processors, input, output and storage devices
-          <ul>
-            <li><a href="h446-01-1.1.1.html">1.1.1 Structure and function of the processor</a></li>
-            <li><a href="h446-01-1.1.2.html">1.1.2 Types of processor</a></li>
-            <li><a href="h446-01-1.1.3.html">1.1.3 Input, output and storage</a></li>
-          </ul>
-        </li>
-        <li>1.2 Software and software development
-          <ul>
-            <li><a href="h446-01-1.2.1.html">1.2.1 Systems Software</a></li>
-            <li><a href="h446-01-1.2.2.html">1.2.2 Applications Generation</a></li>
-            <li><a href="h446-01-1.2.3.html">1.2.3 Software Development</a></li>
-            <li><a href="h446-01-1.2.4.html">1.2.4 Types of Programming Language</a></li>
-          </ul>
-        </li>
-        <li>1.3 Exchanging data
-          <ul>
-            <li><a href="h446-01-1.3.1.html">1.3.1 Compression, Encryption and Hashing</a></li>
-            <li><a href="h446-01-1.3.2.html">1.3.2 Databases</a></li>
-            <li><a href="h446-01-1.3.3.html">1.3.3 Networks</a></li>
-            <li><a href="h446-01-1.3.4.html">1.3.4 Web technologies</a></li>
-          </ul>
-        </li>
-        <li>1.4 Data types, data structures and algorithms
-          <ul>
-            <li><a href="h446-01-1.4.1.html">1.4.1 Data types</a></li>
-            <li><a href="h446-01-1.4.2.html">1.4.2 Data structures</a></li>
-            <li><a href="h446-01-1.4.3.html">1.4.3 Boolean algebra</a></li>
-          </ul>
-        </li>
-        <li>1.5 Legal, moral, cultural and ethical issues
-          <ul>
-            <li><a href="h446-01-1.5.1.html">1.5.1 Computing related legislation</a></li>
-            <li><a href="h446-01-1.5.2.html">1.5.2 Moral and ethical issues</a></li>
-          </ul>
-        </li>
-      </ul>
+  <main class="container my-5">
+    <section id="topic-selection">
+      <h2 class="mb-4">Select a Topic</h2>
+      <div class="row" id="topic-grid">
+        <!-- Component 01 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+              <h3>Component 01: Computer Systems</h3>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <div class="list-group-item topic-card" data-topic="1.1.1">
+                  <h5>1.1.1 Structure and function of the processor</h5>
+                  <button class="btn btn-primary start-quiz">Start Quiz</button>
+                  <span class="badge bg-success ms-2 progress-badge">0% Complete</span>
+                </div>
+                <div class="list-group-item topic-card" data-topic="1.1.2">
+                  <h5>1.1.2 Types of processor</h5>
+                  <button class="btn btn-primary start-quiz">Start Quiz</button>
+                  <span class="badge bg-success ms-2 progress-badge">0% Complete</span>
+                </div>
+                <div class="list-group-item topic-card" data-topic="1.1.3">
+                  <h5>1.1.3 Input, output and storage</h5>
+                  <button class="btn btn-primary start-quiz">Start Quiz</button>
+                  <span class="badge bg-success ms-2 progress-badge">0% Complete</span>
+                </div>
+                <!-- Add similar for all topics -->
+                <div class="list-group-item topic-card" data-topic="1.2.1">
+                  <h5>1.2.1 Systems Software</h5>
+                  <button class="btn btn-secondary start-quiz" disabled>Coming Soon</button>
+                  <span class="badge bg-success ms-2 progress-badge">0% Complete</span>
+                </div>
+                <!-- Repeat for 1.2.2 to 1.5.2, 2.1.1 to 2.3.3 with disabled if no questions -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Component 02 -->
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+              <h3>Component 02: Algorithms and Programming</h3>
+            </div>
+            <div class="card-body">
+              <div class="list-group">
+                <!-- Add topic cards similarly -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="component-02">
-      <h2>Component 02 — Algorithms and Programming</h2>
-      <ul>
-        <li>2.1 Elements of computational thinking
-          <ul>
-            <li><a href="h446-02-2.1.1.html">2.1.1 Thinking abstractly</a></li>
-            <li><a href="h446-02-2.1.2.html">2.1.2 Thinking ahead</a></li>
-            <li><a href="h446-02-2.1.3.html">2.1.3 Thinking procedurally</a></li>
-            <li><a href="h446-02-2.1.4.html">2.1.4 Thinking logically</a></li>
-            <li><a href="h446-02-2.1.5.html">2.1.5 Thinking concurrently</a></li>
-          </ul>
-        </li>
-        <li>2.2 Problem solving and programming
-          <ul>
-            <li><a href="h446-02-2.2.1.html">2.2.1 Programming techniques</a></li>
-            <li><a href="h446-02-2.2.2.html">2.2.2 Computational methods</a></li>
-          </ul>
-        </li>
-        <li>2.3 Algorithms
-          <ul>
-            <li><a href="h446-02-2.3.1.html">2.3.1 Algorithms</a></li>
-            <li><a href="h446-02-2.3.2.html">2.3.2 Algorithm design</a></li>
-            <li><a href="h446-02-2.3.3.html">2.3.3 Algorithm efficiency</a></li>
-          </ul>
-        </li>
-      </ul>
+    <section id="quiz-container" class="hidden">
+      <h2 id="quiz-title" class="mb-4">Quiz: Loading...</h2>
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-3">
+            <select id="quiz-mode" class="form-select w-25">
+              <option value="study">Study Mode (Immediate Feedback)</option>
+              <option value="test">Test Mode (End Feedback)</option>
+            </select>
+            <button id="reshuffle-btn" class="btn btn-secondary">Reshuffle Questions</button>
+          </div>
+          <div id="progress-bar" class="progress mb-3">
+            <div id="progress-fill" class="progress-bar" role="progressbar" style="width: 0%;"></div>
+          </div>
+          <div id="question-container"></div>
+          <button id="next-btn" class="btn btn-primary mt-3" disabled>Next</button>
+          <div id="feedback" class="mt-3"></div>
+          <div id="explanation" class="mt-3 alert alert-info hidden"></div>
+        </div>
+      </div>
+      <button id="back-to-topics" class="btn btn-outline-primary mt-4">Back to Topics</button>
+    </section>
+
+    <section id="results-container" class="hidden">
+      <h2>Quiz Results</h2>
+      <div class="alert alert-success" id="score-display"></div>
+      <div id="results-details"></div>
+      <button id="retake-btn" class="btn btn-primary">Retake Quiz</button>
+      <button id="back-from-results" class="btn btn-outline-primary">Back to Topics</button>
     </section>
   </main>
 
-  <footer>
-    <p>Made for quick independent practice • Shuffle enabled • Best on modern browsers</p>
-    <p>Progress: <span id="progress"></span></p>
+  <footer class="bg-light text-center py-3">
+    <p>Made for effective revision • Interactive & Engaging • Best on modern browsers</p>
+    <p>© 2025 OCR A-Level Computer Science MCQ Mastery. All rights reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
