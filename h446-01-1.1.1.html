@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🖥️ H446/01 — 1.1.1 Structure and function of the processor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>H446/01 — 1.1.1 Structure and function of the processor</h1>
+    <a href="index.html">← Back to topics</a>
+  </header>
+
+  <form class="quiz">
+    <div class="question">
+      <p>Which register holds the address of the next instruction?</p>
+      <ol>
+        <li><label><input type="radio" name="q1" data-correct="true"> Program Counter (PC)</label></li>
+        <li><label><input type="radio" name="q1"> MDR</label></li>
+        <li><label><input type="radio" name="q1"> ACC</label></li>
+        <li><label><input type="radio" name="q1"> CIR</label></li>
+      </ol>
+      <button class="show-exp" type="button">Show Explanation</button>
+      <div class="explanation">The Program Counter (PC) holds the address of the next instruction to be fetched in the Fetch-Decode-Execute cycle.</div>
+    </div>
+
+    <div class="question">
+      <p>The MDR temporarily holds:</p>
+      <ol>
+        <li><label><input type="radio" name="q2" data-correct="true"> Data being transferred to/from memory</label></li>
+        <li><label><input type="radio" name="q2"> The address of the next instruction</label></li>
+        <li><label><input type="radio" name="q2"> Results of arithmetic only</label></li>
+        <li><label><input type="radio" name="q2"> Microcode</label></li>
+      </ol>
+      <button class="show-exp" type="button">Show Explanation</button>
+      <div class="explanation">The Memory Data Register (MDR) holds data or instructions moving between memory and the CPU.</div>
+    </div>
+
+    <!-- More questions... Add 8-18 more similarly. Example new one: -->
+    <div class="question">
+      <p>Which factor does NOT directly affect CPU performance?</p>
+      <ol>
+        <li><label><input type="radio" name="q3"> Number of USB ports</label></li>
+        <li><label><input type="radio" name="q3" data-correct="true"> Clock speed</label></li>
+        <li><label><input type="radio" name="q3"> Number of cores</label></li>
+        <li><label><input type="radio" name="q3"> Cache size</label></li>
+      </ol>
+      <button class="show-exp" type="button">Show Explanation</button>
+      <div class="explanation">Clock speed, cores, and cache affect performance; USB ports are I/O and don't directly impact CPU speed.</div>
+    </div>
+
+    <!-- Continue with questions on buses, FDE cycle, pipelining, Von Neumann/Harvard. -->
+
+    <button type="submit">Submit Quiz</button>
+  </form>
+
+  <p>Tip: Press Ctrl/Cmd + R to reshuffle or use the button below.</p>
+</body>
+</html>
