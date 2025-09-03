@@ -38,12 +38,11 @@
       <div class="explanation">The Memory Data Register (MDR) holds data or instructions moving between memory and the CPU.</div>
     </div>
 
-    <!-- More questions... Add 8-18 more similarly. Example new one: -->
     <div class="question">
       <p>Which factor does NOT directly affect CPU performance?</p>
       <ol>
-        <li><label><input type="radio" name="q3"> Number of USB ports</label></li>
-        <li><label><input type="radio" name="q3" data-correct="true"> Clock speed</label></li>
+        <li><label><input type="radio" name="q3" data-correct="true"> Number of USB ports</label></li>
+        <li><label><input type="radio" name="q3"> Clock speed</label></li>
         <li><label><input type="radio" name="q3"> Number of cores</label></li>
         <li><label><input type="radio" name="q3"> Cache size</label></li>
       </ol>
@@ -51,7 +50,29 @@
       <div class="explanation">Clock speed, cores, and cache affect performance; USB ports are I/O and don't directly impact CPU speed.</div>
     </div>
 
-    <!-- Continue with questions on buses, FDE cycle, pipelining, Von Neumann/Harvard. -->
+    <div class="question">
+      <p>During the Fetch stage, what is the correct sequence?</p>
+      <ol>
+        <li><label><input type="radio" name="q4" data-correct="true"> MAR ← PC; Memory → MDR; CIR ← MDR</label></li>
+        <li><label><input type="radio" name="q4"> MDR ← PC; MAR ← Memory; CIR ← ACC</label></li>
+        <li><label><input type="radio" name="q4"> PC ← MDR; MAR ← CIR; ACC ← PC</label></li>
+        <li><label><input type="radio" name="q4"> CIR ← PC; MDR ← MAR; PC ← ACC</label></li>
+      </ol>
+      <button class="show-exp" type="button">Show Explanation</button>
+      <div class="explanation">The Fetch stage involves copying the PC to MAR, reading memory into MDR, then transferring to CIR.</div>
+    </div>
+
+    <div class="question">
+      <p>What is the role of the ALU?</p>
+      <ol>
+        <li><label><input type="radio" name="q5" data-correct="true"> Performs arithmetic and logical operations</label></li>
+        <li><label><input type="radio" name="q5"> Stores the next instruction address</label></li>
+        <li><label><input type="radio" name="q5"> Manages memory allocation</label></li>
+        <li><label><input type="radio" name="q5"> Decodes instructions</label></li>
+      </ol>
+      <button class="show-exp" type="button">Show Explanation</button>
+      <div class="explanation">The Arithmetic Logic Unit (ALU) handles computations like addition and logical AND/OR.</div>
+    </div>
 
     <button type="submit">Submit Quiz</button>
   </form>

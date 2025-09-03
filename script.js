@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchBar = document.getElementById('search-bar');
   searchBar.addEventListener('input', (e) => {
     const term = e.target.value.toLowerCase();
-    document.querySelectorAll('li').forEach(li => {
-      li.style.display = li.textContent.toLowerCase().includes(term) ? 'list-item' : 'none';
+    document.querySelectorAll('.card').forEach(card => {
+      card.style.display = card.textContent.toLowerCase().includes(term) ? 'block' : 'none';
     });
   });
 
@@ -62,6 +62,6 @@ function shuffleQuiz() {
     const answers = Array.from(q.querySelectorAll('label'));
     answers.sort(() => Math.random() - 0.5);
     const ol = q.querySelector('ol');
-    answers.forEach(a => ol.appendChild(a.parentNode)); // Assuming li > label
+    answers.forEach(a => ol.appendChild(a.parentNode));
   });
 }
