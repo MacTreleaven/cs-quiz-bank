@@ -1,85 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>A-Level Computer Science (OCR H446) — MCQ Bank</title>
-  <style>
-:root{
-  --bg:#0f172a;          /* slate-900 */
-  --panel:#0b1220;       /* darker panel */
-  --card:#111827;        /* gray-900 */
-  --muted:#9ca3af;       /* gray-400 */
-  --accent:#22d3ee;      /* cyan-400 */
-  --accent2:#a78bfa;     /* violet-400 */
-  --ok:#10b981;          /* emerald-500 */
-  --warn:#f59e0b;        /* amber-500 */
-}
-*{box-sizing:border-box}
-body{margin:0;background:linear-gradient(140deg,var(--bg),#0a0920 55%,#111532);min-height:100vh;
-     color:white;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-.container{max-width:1100px;margin:0 auto;padding:28px}
-.header{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
-h1{font-weight:800;letter-spacing:.2px;margin:.2rem 0}
-.sub{color:var(--muted);margin:.2rem 0 1rem}
-.badge{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#04121c;
-  font-weight:700;padding:.15rem .6rem;border-radius:999px;font-size:.9rem}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
-  border:1px solid rgba(255,255,255,.08); border-radius:16px;padding:16px;text-decoration:none;color:inherit;
-  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease}
-.card:hover{transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.25);
-  border-color:rgba(255,255,255,.18)}
-.card h3{margin:.2rem 0}
-.small{color:var(--muted);font-size:.95rem;margin:0}
-.navbtn{color:white;text-decoration:none;border:1px solid rgba(255,255,255,.15);
-  padding:.45rem .7rem;border-radius:12px}
-.navbtn:hover{border-color:rgba(255,255,255,.35)}
-.quizdown{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03));
-  border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px;margin-top:14px}
-.tip{color:var(--muted);margin-top:12px}
-hr{border:0;border-top:1px solid rgba(255,255,255,.15);margin:18px 0}
-.footer{color:var(--muted);font-size:.9rem;margin-top:18px}
-kbd{background:#0b1021;border:1px solid rgba(255,255,255,.2);padding:.05rem .35rem;border-radius:6px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧠 OCR A-Level Computer Science MCQ Bank (H446)</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div>
-        <h1>🧠 A-Level Computer Science MCQ Bank</h1>
-        <p class="sub">OCR H446/01 Computer Systems & H446/02 Algorithms and Programming</p>
-      </div>
-      <a class="navbtn" href="https://github.com" target="_blank" rel="noreferrer">GitHub Pages</a>
-    </div>
+  <header>
+    <h1>OCR H446 A-Level Computer Science MCQ Bank</h1>
+    <p>Component 01: Computer Systems & Component 02: Algorithms and Programming</p>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <input type="text" id="search-bar" placeholder="Search topics (e.g., 1.1.1 or processor)">
+  </header>
 
-    <span class="badge">H446/01 — Computer Systems</span>
-    <div class="grid" style="margin-top:10px">
-      <a class="card" href="h446-01-processors.html"><h3>1.1 Processors, I/O & Storage</h3><p class="small">CPU, registers, pipelining, devices, storage</p></a>
-      <a class="card" href="h446-01-software.html"><h3>1.2 Software & Development</h3><p class="small">OS, scheduling, translators, SDLC</p></a>
-      <a class="card" href="h446-01-exchanging-data.html"><h3>1.3 Exchanging Data</h3><p class="small">Networks, web, databases, compression, encryption</p></a>
-      <a class="card" href="h446-01-data-types.html"><h3>1.4 Data Types & Structures</h3><p class="small">Binary, floating point, strings, ADTs</p></a>
-      <a class="card" href="h446-01-ethics.html"><h3>1.5 Legal, Moral, Ethical</h3><p class="small">Legislation, GDPR, environmental & cultural impact</p></a>
-      <a class="card" href="h446-01-networks.html"><h3>1.3 Networks & Protocols (Deep dive)</h3><p class="small">Layers, devices, TCP/UDP, DNS</p></a>
-      <a class="card" href="h446-01-databases.html"><h3>1.3 Databases & SQL (Deep dive)</h3><p class="small">Normalisation, joins, queries</p></a>
-      <a class="card" href="h446-01-web-tech.html"><h3>1.3 Web Technologies (Deep dive)</h3><p class="small">HTTP/HTTPS, cookies, status codes</p></a>
-      <a class="card" href="h446-01-compression-encryption.html"><h3>1.3 Compression & Encryption (Deep dive)</h3><p class="small">Lossless vs lossy, symmetric vs asymmetric</p></a>
-      <a class="card" href="h446-01-number-systems.html"><h3>1.4 Number Systems</h3><p class="small">Two’s complement, hex, IEEE-754</p></a>
-    </div>
+  <main>
+    <section id="component-01">
+      <h2>Component 01 — Computer Systems</h2>
+      <ul>
+        <li>1.1 The characteristics of contemporary processors, input, output and storage devices
+          <ul>
+            <li><a href="h446-01-1.1.1.html">1.1.1 Structure and function of the processor</a></li>
+            <li><a href="h446-01-1.1.2.html">1.1.2 Types of processor</a></li>
+            <li><a href="h446-01-1.1.3.html">1.1.3 Input, output and storage</a></li>
+          </ul>
+        </li>
+        <li>1.2 Software and software development
+          <ul>
+            <li><a href="h446-01-1.2.1.html">1.2.1 Systems Software</a></li>
+            <li><a href="h446-01-1.2.2.html">1.2.2 Applications Generation</a></li>
+            <li><a href="h446-01-1.2.3.html">1.2.3 Software Development</a></li>
+            <li><a href="h446-01-1.2.4.html">1.2.4 Types of Programming Language</a></li>
+          </ul>
+        </li>
+        <li>1.3 Exchanging data
+          <ul>
+            <li><a href="h446-01-1.3.1.html">1.3.1 Compression, Encryption and Hashing</a></li>
+            <li><a href="h446-01-1.3.2.html">1.3.2 Databases</a></li>
+            <li><a href="h446-01-1.3.3.html">1.3.3 Networks</a></li>
+            <li><a href="h446-01-1.3.4.html">1.3.4 Web technologies</a></li>
+          </ul>
+        </li>
+        <li>1.4 Data types, data structures and algorithms
+          <ul>
+            <li><a href="h446-01-1.4.1.html">1.4.1 Data types</a></li>
+            <li><a href="h446-01-1.4.2.html">1.4.2 Data structures</a></li>
+            <li><a href="h446-01-1.4.3.html">1.4.3 Boolean algebra</a></li>
+          </ul>
+        </li>
+        <li>1.5 Legal, moral, cultural and ethical issues
+          <ul>
+            <li><a href="h446-01-1.5.1.html">1.5.1 Computing related legislation</a></li>
+            <li><a href="h446-01-1.5.2.html">1.5.2 Moral and ethical issues</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-    <hr/>
+    <section id="component-02">
+      <h2>Component 02 — Algorithms and Programming</h2>
+      <ul>
+        <li>2.1 Elements of computational thinking
+          <ul>
+            <li><a href="h446-02-2.1.1.html">2.1.1 Thinking abstractly</a></li>
+            <li><a href="h446-02-2.1.2.html">2.1.2 Thinking ahead</a></li>
+            <li><a href="h446-02-2.1.3.html">2.1.3 Thinking procedurally</a></li>
+            <li><a href="h446-02-2.1.4.html">2.1.4 Thinking logically</a></li>
+            <li><a href="h446-02-2.1.5.html">2.1.5 Thinking concurrently</a></li>
+          </ul>
+        </li>
+        <li>2.2 Problem solving and programming
+          <ul>
+            <li><a href="h446-02-2.2.1.html">2.2.1 Programming techniques</a></li>
+            <li><a href="h446-02-2.2.2.html">2.2.2 Computational methods</a></li>
+          </ul>
+        </li>
+        <li>2.3 Algorithms
+          <ul>
+            <li><a href="h446-02-2.3.1.html">2.3.1 Algorithms</a></li>
+            <li><a href="h446-02-2.3.2.html">2.3.2 Algorithm design</a></li>
+            <li><a href="h446-02-2.3.3.html">2.3.3 Algorithm efficiency</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-    <span class="badge">H446/02 — Algorithms & Programming</span>
-    <div class="grid" style="margin-top:10px">
-      <a class="card" href="h446-02-comp-thinking.html"><h3>2.1 Computational Thinking</h3><p class="small">Abstraction, decomposition, logic, FSMs</p></a>
-      <a class="card" href="h446-02-programming.html"><h3>2.2 Problem Solving & Programming</h3><p class="small">Pseudocode, testing, paradigms, recursion</p></a>
-      <a class="card" href="h446-02-standard-algorithms.html"><h3>2.3 Standard Algorithms</h3><p class="small">Sorts, searches, graphs, trees</p></a>
-      <a class="card" href="h446-02-logic-fsms.html"><h3>Boolean Logic & FSMs (Deep dive)</h3><p class="small">Laws, gates, Mealy/Moore</p></a>
-      <a class="card" href="h446-02-complexity.html"><h3>Complexity & Big-O</h3><p class="small">Time/space, orders of growth</p></a>
-      <a class="card" href="h446-02-data-structures.html"><h3>Abstract Data Types (ADTs)</h3><p class="small">Stacks, queues, graphs, hashing</p></a>
-    </div>
-
-    <div class="footer">Made for quick independent practice • Shuffle enabled • Best on modern browsers</div>
-  </div>
+  <footer>
+    <p>Made for quick independent practice • Shuffle enabled • Best on modern browsers</p>
+    <p>Progress: <span id="progress"></span></p>
+  </footer>
 </body>
 </html>
